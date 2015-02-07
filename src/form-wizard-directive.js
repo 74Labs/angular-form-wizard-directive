@@ -6,10 +6,6 @@
     
         .directive('formWizard', ['$http', function($http) {
         
-            this.template = function() {
-                return $http.get('angular-form-wizard-directive.html').then(function(response) { return response; });
-            };
-            
             this.linker = function(scope, element, attributes) {
                 scope.formWizardEnabled = true;
                 scope.formWizardSelectedIndex = 0;
