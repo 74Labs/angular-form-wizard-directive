@@ -2,7 +2,7 @@
     
     'use strict';
     
-    angular.module("sflFormWizard", [])
+    angular.module("sfl.form.wizard", [])
     
         .directive('formWizard', ['$http', function($http) {
         
